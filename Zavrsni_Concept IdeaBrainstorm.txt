@@ -1,0 +1,53 @@
+                                        Mythic Progress Guild Leaderboard
+
+U igri ima 5 raidova. U igri ima vise guildova. Svaki guild moze raid rijesiti
+vise puta. 1 Raid ima 3 difficulty-a (normal, hard, mythic). Ako guild rijesi cijeli 
+raid na odredenom difficultyu to im je 1 od 5 raidova progress za taj difficulty. 
+Guild se moze nalaziti na jednom serveru, 1 server moze imati vise guildova. 
+Svaki guild ima vise membera, 1 member moze biti u samo 1 guildu i na 1 serveru.
+1 Member ne mora obavezno imati isti progress kao i guild kojeg je on dio.
+1 Member ima 1 klasu. 
+ Inicijalni ispis liste guildova ce u stupcu navoditi ime guilda, server na kojem se 
+nalaze i najveci difficulty na kojem imaju progress.
+npr: 
+Guild                            Server                     Difficulty
+Serenity                      Ragnaros                 Mythic (3/5)
+ComicSans                Golemagg                Mythic (1/5)
+Boneless                     Ragnaros                 Heroic (5/5)
+...
+Nakon sto se klikne na ime guilda ce se viditi detaljan ispis guilda sa svim 
+atributima i njihovim vrijednostima ako ih imaju.
+npr:
+
+Guild name: Serenity
+
+Server: Ragnaros
+
+Raid Progress:
+Mythic (3/5):   -Antorus, The Burning Throne: -
+                         -The Nighthold: +
+                         -The Emerald Nightmare: +
+                         -Tomb of Sargeras: -
+                         -Trial of Valor: +
+Heroic (5/5):   -Antorus, The Burning Throne: +
+                         -The Nighthold: +
+                         -The Emerald Nightmare: +
+                         -Tomb of Sargeras: +
+                         -Trial of Valor: +
+
+Total members: 394
+Top 10 Members:
+Name                                    Class                Progress
+SaborskiZastupnik               Warlock           Mythic (4/5)
+Saudijac                                Warrior            Mythic (4/5)
+EbicGamer                           Rogue              Mythic (4/5)
+Sisavac123                            Monk              Mythic (2/5)
+Stormraging                         Warrior            Mythic (2/5)
+200Pump                              Hunter            Heroic (5/5)
+CunningLinguist                  Mage              Heroic (5/5)
+Tankomania                      Death Knight     Heroic (5/5)
+Gookuu                                 Paladin            Heroic (4/5)
+HeeHeeler                             Priest              Heroic (4/5)
+
+
+
