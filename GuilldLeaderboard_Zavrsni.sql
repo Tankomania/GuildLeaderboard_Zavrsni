@@ -26,7 +26,8 @@ realm varchar(20)
 );
 
 create table raidgroup(
-cleardate int not null primary key identity(1,1),
+sifra int not null primary key identity(1,1),
+cleardate date,
 members int,
 );
 
@@ -34,7 +35,7 @@ create table raids(
 sifra int not null primary key identity(1,1),
 ime varchar(50),
 difficulty char(1),
-cleardate int,
+raidgroup_clear int,
 completion varchar(100)
 );
 
