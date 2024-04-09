@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using ZavrsniRadAK.Models;
 
-namespace ZavrsniRadAK.Models
+namespace ZavrsniRadAK.Data
 {
     public partial class GuildLeaderboard_ZavrsniContext : DbContext
     {
@@ -21,16 +22,6 @@ namespace ZavrsniRadAK.Models
         public virtual DbSet<Progress> Progresses { get; set; } = null!;
         public virtual DbSet<Raid> Raids { get; set; } = null!;
         public virtual DbSet<Raidgroup> Raidgroups { get; set; } = null!;
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=DESKTOP-82R389N\\SQLEXPRESS01; Database=GuildLeaderboard_Zavrsni; TrustServerCertificate=True; Integrated Security=True");
-            }
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.UseCollation("Croatian_CI_AS");
