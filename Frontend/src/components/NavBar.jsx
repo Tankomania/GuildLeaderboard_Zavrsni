@@ -24,11 +24,8 @@ const NavBar = () => {
               <NavDropdown.Item>
                 Raids
               </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item>
-                Cum
-              </NavDropdown.Item>
-            
+
+
           </Nav>    
     </Navbar>
   );

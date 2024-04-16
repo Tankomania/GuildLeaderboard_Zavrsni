@@ -11,10 +11,10 @@ namespace ZavrsniRadAK.Models
         }
 
         public int Id { get; set; }
-        public int? Readygroup { get; set; }
+        public int? Raidgroup { get; set; }
         public DateTime? Cleardate { get; set; }
 
-        public virtual Raidgroup? ReadygroupNavigation { get; set; }
+        public virtual Raidgroup? RaidgroupNavigation { get; set; }
         public virtual ICollection<Raid> Raids { get; set; }
     }
 }

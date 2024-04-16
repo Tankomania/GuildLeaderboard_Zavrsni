@@ -22,6 +22,16 @@ namespace ZavrsniRadAK.Data
         public virtual DbSet<Progress> Progresses { get; set; } = null!;
         public virtual DbSet<Raid> Raids { get; set; } = null!;
         public virtual DbSet<Raidgroup> Raidgroups { get; set; } = null!;
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("Server=DESKTOP-82R389N\\SQLEXPRESS01; Database=GuildLeaderboard_Zavrsni; TrustServerCertificate=True; Integrated Security=True");
+            }
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.UseCollation("Croatian_CI_AS");
@@ -89,12 +99,12 @@ namespace ZavrsniRadAK.Data
                     .HasColumnType("datetime")
                     .HasColumnName("cleardate");
 
-                entity.Property(e => e.Readygroup).HasColumnName("readygroup");
+                entity.Property(e => e.Raidgroup).HasColumnName("raidgroup");
 
-                entity.HasOne(d => d.ReadygroupNavigation)
+                entity.HasOne(d => d.RaidgroupNavigation)
                     .WithMany(p => p.Progresses)
-                    .HasForeignKey(d => d.Readygroup)
-                    .HasConstraintName("FK__progress__readyg__440B1D61");
+                    .HasForeignKey(d => d.Raidgroup)
+                    .HasConstraintName("FK__progress__raidgr__440B1D61");
             });
 
             modelBuilder.Entity<Raid>(entity =>
@@ -147,7 +157,7 @@ namespace ZavrsniRadAK.Data
                         r => r.HasOne<Raidgroup>().WithMany().HasForeignKey("RaidgroupId").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__raid_plan__raidg__3D5E1FD2"),
                         j =>
                         {
-                            j.HasKey("RaidgroupId", "MemberId").HasName("PK__raid_pla__46065A6EEA2D7F9B");
+                            j.HasKey("RaidgroupId", "MemberId").HasName("PK__raid_pla__46065A6ED8DDDFED");
 
                             j.ToTable("raid_planning");
 
