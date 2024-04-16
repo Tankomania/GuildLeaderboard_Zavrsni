@@ -82,11 +82,6 @@ namespace ZavrsniRadAK.Data
                     .HasMaxLength(20)
                     .IsUnicode(false)
                     .HasColumnName("realm");
-
-                entity.HasOne(d => d.Guild)
-                    .WithMany(p => p.Members)
-                    .HasForeignKey(d => d.GuildId)
-                    .HasConstraintName("FK__members__guild_i__44FF419A");
             });
 
             modelBuilder.Entity<Progress>(entity =>

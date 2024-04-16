@@ -17,9 +17,6 @@ namespace ZavrsniRadAK.Models
         public int? Charlevel { get; set; }
         public string? Realm { get; set; }
         public int? GuildId { get; set; }
-
-        public virtual Guild? Guild { get; set; }
-
         public virtual ICollection<Raidgroup> Raidgroups { get; set; }
     }
 }
