@@ -7,14 +7,14 @@ const MemberList = ({ guildId }) => {
     fetch(`https://localhost:7211/api/guildmembers/${guildId}`)
       .then(response => response.json())
       .then(data => {
-        console.log('Data from API:', data); // Log the data fetched from the API
-        setMembers(data); // Set members state
+        console.log('Data from API:', data); 
+        setMembers(data); 
       })
-      .catch(error => console.error('Error fetching data:', error)); // Log any errors
+      .catch(error => console.error('Error fetching data:', error)); 
   }, [guildId]);
 
   console.log("Guild ID:" + guildId);
-  console.log('Members:', members); // Log the members state
+  console.log('Members:', members); 
 
   return (
     <div>

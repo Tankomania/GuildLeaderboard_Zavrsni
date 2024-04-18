@@ -23,7 +23,6 @@ function App() {
           <Route path={RoutesNames.HOME} element={<Home />} />
           <Route path={RoutesNames.GUILDS} element={<Guilds />} />
           <Route path={RoutesNames.MEMBERS} element={<SpecificGuild />} />
-        
         </>
         </Routes>
       </>

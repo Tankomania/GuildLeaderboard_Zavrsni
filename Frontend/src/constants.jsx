@@ -1,7 +1,7 @@
 export const RoutesNames = {
     HOME: '/',
     GUILDS: '/guilds',
-    MEMBERS: '/members/:guildId',
+    MEMBERS: '/members/:guildId'
 };
 
 export const App = {

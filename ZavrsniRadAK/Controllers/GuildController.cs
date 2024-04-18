@@ -44,5 +44,56 @@ namespace ZavrsniRadAK.Controllers
 
             return Ok();
         }
+
+        // POST: api/Guild
+        [HttpPost]
+        public IActionResult Post([FromBody] Guild guild)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            _context.Guilds.Add(guild);
+            _context.SaveChanges();
+
+            return Ok();
+        }
+
+        // PUT: api/Guild/5
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, [FromBody] Guild guild)
+        {
+            if (id != guild.Id)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(guild).State = EntityState.Modified;
+
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!GuildExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        private bool GuildExists(int id)
+        {
+            return _context.Guilds.Any(e => e.Id == id);
+        }
     }
+
 }

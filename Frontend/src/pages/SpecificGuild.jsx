@@ -15,7 +15,7 @@ const SpecificGuild = () => {
     </div>
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       <GuildRaidList guildId={guildId}></GuildRaidList>
-    </div>
+      </div>
     </>
   );
 };
