@@ -3,7 +3,7 @@ import React from 'react';
 const DeleteGuildButton = ({ guildId, onDelete }) => {
   const handleDelete = async () => {
     try {
-      const response = await fetch(`https://localhost:7211/api/Guild/${guildId}`, {
+      const response = await fetch(`http://guildboard.runasp.net/api/Guild/${guildId}`, {
         method: 'DELETE',
       });
 
