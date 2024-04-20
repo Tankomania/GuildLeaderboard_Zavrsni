@@ -15,7 +15,6 @@ const NavBar = () => {
               <NavDropdown.Item  onClick={()=>navigate(RoutesNames.HOME)}>Home</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item  onClick={()=>navigate(RoutesNames.GUILDS)}>Guilds</NavDropdown.Item>
-              <NavDropdown.Divider />
           </Nav>    
     </Navbar>
   );
