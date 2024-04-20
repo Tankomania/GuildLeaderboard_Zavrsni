@@ -26,7 +26,7 @@ namespace ZavrsniRadAK
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            var connectionString = builder.Configuration.GetConnectionString("Db");
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             builder.Services.AddDbContext<GuildLeaderboard_ZavrsniContext>
                 (
                     options => options.UseSqlServer(connectionString)

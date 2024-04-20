@@ -28,7 +28,7 @@ public class RaidInfoController : ControllerBase
                             select new GuildRaidInfo
                             {
                                 RaidName = r.Raidname,
-                                Difficulty = r.Difficulty,
+                                Difficulty = rp.Difficulty,
                                 ClearDate = (DateTime)p.Cleardate
                             }).Distinct().ToList();
 
