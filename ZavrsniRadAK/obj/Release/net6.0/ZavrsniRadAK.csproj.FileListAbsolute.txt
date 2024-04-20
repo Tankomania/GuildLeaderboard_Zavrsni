@@ -253,3 +253,4 @@ C:\Users\PC\Documents\GitHub\ZavrsniRadAK\ZavrsniRadAK\obj\Release\net6.0\refint
 C:\Users\PC\Documents\GitHub\ZavrsniRadAK\ZavrsniRadAK\obj\Release\net6.0\ZavrsniRadAK.pdb
 C:\Users\PC\Documents\GitHub\ZavrsniRadAK\ZavrsniRadAK\obj\Release\net6.0\ZavrsniRadAK.genruntimeconfig.cache
 C:\Users\PC\Documents\GitHub\ZavrsniRadAK\ZavrsniRadAK\obj\Release\net6.0\ref\ZavrsniRadAK.dll
+C:\Users\PC\Documents\GitHub\ZavrsniRadAK\ZavrsniRadAK\bin\Release\net6.0\ZavrsniRadAK.staticwebassets.runtime.json

@@ -47,7 +47,8 @@ namespace ZavrsniRadAK
                     app.UseSwaggerUI();
                 };
 
-            
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseCors(customCorsPolicy);

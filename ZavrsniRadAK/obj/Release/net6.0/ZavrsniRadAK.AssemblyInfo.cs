@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZavrsniRadAK")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eaf208ea879428c8e96159c87431adfffc728876")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZavrsniRadAK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZavrsniRadAK")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
