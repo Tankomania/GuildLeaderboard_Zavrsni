@@ -4,7 +4,7 @@ const MemberList = ({ guildId }) => {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
-    fetch(`https://localhost:7211/api/guildmembers/${guildId}`)
+    fetch(`http://guildboard.runasp.net/api/guildmembers/${guildId}`)
       .then(response => response.json())
       .then(data => {
         console.log('Data from API:', data); 
