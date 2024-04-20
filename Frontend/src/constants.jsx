@@ -5,5 +5,5 @@ export const RoutesNames = {
 };
 
 export const App = {
-    URL: 'https://localhost:7211/api'
+    URL: 'http://guildboard.runasp.net/api'
 };
