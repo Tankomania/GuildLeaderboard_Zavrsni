@@ -8,7 +8,7 @@ const GuildForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://localhost:7211/api/Guild', {
+      const response = await fetch('http://guildboard.runasp.net/api/Guild', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -20,8 +20,8 @@ const GuildForm = () => {
         throw new Error('Failed to create guild');
       }
 
-      // Clear the input field after successful creation
       setGuildName('');
+      setGuildRealm('');
     } catch (error) {
       console.error('Error creating guild:', error.message);
     }
