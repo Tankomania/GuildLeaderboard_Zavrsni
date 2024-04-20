@@ -9,7 +9,7 @@ const GuildTable = () => {
 
   useEffect(() => {
     // Fetch or import your data here
-    fetch("https://localhost:7211/api/Guild")
+    fetch("http://guildboard.runasp.net/api/Guild")
       .then(response => response.json())
       .then(data => setDataArray(data));
   }, []);
